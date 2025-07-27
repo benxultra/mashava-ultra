@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mashava Ultra</title>
+  <style>
+    body {
+      font-family: 'Ubuntu', sans-serif;
+      padding: 20px;
+    }
+    h1 {
+      color: darkblue;
+      font-weight: bold;
+    }
+    h2 {
+      color: royalblue;
+      font-weight: bold;
+    }
+    label {
+      display: inline-block;
+      width: 150px;
+      margin-top: 10px;
+      color: black;
+    }
+    input, select {
+      margin-top: 10px;
+      padding: 5px;
+      width: 200px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: darkblue;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>Mashava Ultra</h1>
+  <h2>Registration Desk</h2>
+
+  <form onsubmit="event.preventDefault(); alert('Registration successful!');">
+    <!-- Name and Surname -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+
+    <label for="surname">Surname:</label>
+    <input type="text" id="surname" name="surname">
+    <br>
+
+    <!-- Gender -->
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender">
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select>
+    <br>
+
+    <!-- Phone Number -->
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phone" name="phone">
+    <br>
+
+    <!-- Region and Role -->
+    <label for="region">Region:</label>
+    <select id="region" name="region">
+      <option>Gokwe</option>
+      <option>Greater Mashonaland</option>
+      <option>Manicaland North</option>
+      <option>Manicaland South</option>
+      <option>Masvingo</option>
+      <option>Mashonaland West</option>
+      <option>Matabeleland North</option>
+      <option>Matabeleland South</option>
+      <option>Midlands</option>
+    </select>
+
+    <label for="role">Role:</label>
+    <select id="role" name="role">
+      <option>Pastor</option>
+      <option>Elder</option>
+      <option>Decon</option>
+      <option>Delegate</option>
+      <option>Organiser</option>
+      <option>Father</option>
+      <option>Mother</option>
+      <option>Youth</option>
+      <option>Sunday school</option>
+    </select>
+    <br>
+
+    <!-- Event -->
+    <label for="event">Event:</label>
+    <select id="event" name="event">
+      <option>Christmas convention</option>
+      <option>Girls</option>
+      <option>Men and Christmas convention</option>
+      <option>Mothers & Easter Convention</option>
+      <option>National Assembly</option>
+      <option>Nyc</option>
+      <option>Summer School</option>
+      <option>Winter School</option>
+    </select>
+    <br>
+
+    <!-- Amount Paid and Method -->
+    <label for="amount">Amount Paid:</label>
+    <select id="amount" name="amount">
+      <option>$10</option>
+      <option>$15</option>
+      <option>$20</option>
+      <option>$25</option>
+      <option>$30</option>
+      <option>$35</option>
+      <option>$40</option>
+      <option>$50</option>
+    </select>
+
+    <label for="method">Method of Payment:</label>
+    <select id="method" name="method">
+      <option>Cash</option>
+      <option>Bank transfer</option
